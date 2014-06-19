@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+html {
+    font-size: 100%;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+	text-align: justify;
+	background: url(boardgameshelf.gif);
+	font-size: 0px;
+	line-height: 60px;
+}
+
+h1 {
+    display: none;
+}
+
+body > img {
+    margin-right: 20px;
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.04) 15px, transparent 20px);
+}
+
+footer {
+    font-size: 1rem;
+}
+
+#infopanel {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 10px;
+    border: 1px solid black;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-align: left;
+    max-width: 55%;
+    pointer-events: none;
+}
+
+#infopanel h2 {
+    text-align: center;
+    font-family: Zapfino, Verdana, sans-serif;
+    line-height: 2;
+    margin: 1em;
+}
+
+#infopanel dl dt, #infopanel dl dd {
+    display: inline;
+    margin: 0;
+}
+
+#infopanel dl dt {
+    font-weight: bold;
+}
+
+#infopanel dl dd:after {
+    content: '';
+    display: block;
+}
+
+#infopanel img {
+    float: left;
+}
+
+#infopanel div {
+    float: right;
+    margin: 10px;
+    max-width: 70%;
+}
+
+#infopanel.right > img {
+    float: right;
+}
+
+#infopanel.right div {
+    float: left;
+}
+
+#infoownedexpansions img {
+	margin: 6px;
+	pointer-events: none;
+}
