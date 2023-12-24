@@ -58,18 +58,14 @@ footer {
     display: block;
 }
 
-#infopanel img {
-    float: left;
+#infopanel dl dt:has(+ dd img) {
+    display: block;
 }
 
 #infopanel div {
     float: right;
     margin: 10px;
     max-width: 70%;
-}
-
-#infopanel.right > img {
-    float: right;
 }
 
 #infopanel.right div {

@@ -42,7 +42,7 @@ var infopanelEventListener = function(e) {
 		e.stopPropagation();
 		
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'expansions.php?game=' + image.getAttribute('data-objectid'), true);
+		xhr.open('GET', 'src/expansions.php?game=' + image.getAttribute('data-objectid'), true);
 		xhr.onreadystatechange = function () {
 	        if (xhr.readyState == 4) {
 		        infoownedexpansions.innerHTML = xhr.responseText;
